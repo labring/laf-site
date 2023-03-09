@@ -1,0 +1,48 @@
+.container {
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #FFFFFF;
+  height:76px;
+  width:100%;
+  /* position:absolute; */
+  top: 0px;
+  left: 0px;
+}
+
+.left{
+  display: flex;
+  justify-content: space-evenly;
+  width:600px;
+}
+
+.logo {
+width: 81px;
+height: 24px;
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 24px;
+color: #000000;
+}
+
+.item {
+height: 24px;
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* padding: 0 20px; */
+/* identical to box height, or 150% */
+color: #000000;
+}
+
+.right{
+  display: flex;
+  margin-left: auto;
+  align-items:self-end;
+  justify-content: space-evenly;
+  width:400px;
+}
