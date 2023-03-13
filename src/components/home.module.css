@@ -1,0 +1,38 @@
+
+.title{
+  font-family: 'PingFang SC';
+  position: relative;
+  padding:65px auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 65px;
+}
+
+.part1 {
+  display: flex;
+  margin-top: 64px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.part1card {
+  width: 1150px;
+  height: 240px;
+  justify-content: space-evenly;;
+  align-items: center;
+  margin-bottom: 43px;
+  background: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 24px;
+  color: #000000;
+}

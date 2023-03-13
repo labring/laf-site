@@ -1,12 +1,14 @@
 .container {
+  position:fixed;
   display:flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: #FFFFFF;
+  background:rgba(251,250,255,0.6);
   height:76px;
   width:100%;
   /* position:absolute; */
-  top: 0px;
+  z-index:999;
+  top: 60px;
   left: 0px;
 }
 
@@ -17,8 +19,8 @@
 }
 
 .logo {
-width: 81px;
-height: 24px;
+width: 40px;
+height: 30px;
 font-family: 'PingFang SC';
 font-style: normal;
 font-weight: 400;
@@ -32,8 +34,8 @@ height: 24px;
 font-family: 'PingFang SC';
 font-style: normal;
 font-weight: 400;
-font-size: 16px;
-line-height: 24px;
+font-size: 18px;
+line-height: 25px;
 /* padding: 0 20px; */
 /* identical to box height, or 150% */
 color: #000000;
@@ -45,4 +47,21 @@ color: #000000;
   align-items:self-end;
   justify-content: space-evenly;
   width:400px;
+}
+
+.like{
+  background: url(../../public/likebg.svg) no-repeat;
+  background-size:cover;
+  height:60px;
+  top:0px;
+  position:fixed;
+  z-index:999;
+  width:100%;
+  text-align: center;
+  padding-top:20px;
+}
+
+.iflike{
+  margin:auto;
+  padding-right:20px;
 }

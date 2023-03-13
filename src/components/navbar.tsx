@@ -7,39 +7,47 @@ type Props = {}
 export default function Navbar({}: Props) {
   return (
     <>
+    <div className={styles.like}>
+      <img src="./ifyoulike.svg" className={styles.iflike}></img>
+      <img src="./cancel.svg"></img>
+    </div>
+
     <div className={styles.container}>
     <div className={styles.left}>
-    <div className={styles.logo}>LOGO</div>
+    <div className={styles.logo}>
+    <img
+            src="/icon.svg"
+            className={styles.img}
+          />
+      </div>
 
-      <Link href="#home">
-        <div className={styles.item}>Home</div>
+      <Link href="/">
+        <div className={styles.item}>主页</div>
       </Link>
-      <Link href="#pricing">
-        <div className={styles.item}>Pricing</div>
+      <Link href="pricing">
+        <div className={styles.item}>价格</div>
       </Link>
-      <Link href="#showcase">
-        <div className={styles.item}>Showcase</div>
+      <Link href="showcase">
+        <div className={styles.item}>案例</div>
       </Link>
-      <Link href="#aboutus">
-        <div className={styles.item}>About US</div>
+      <Link href="aboutus">
+        <div className={styles.item}>关于我们</div>
       </Link>
-      <Link href="#faq">
+      <Link href="faq">
         <div className={styles.item}>FAQ</div>
       </Link>
       </div>
     <div className={styles.right}>
     <Link href="#">
-        <div className={styles.item}>github</div>
+        <img src="./doc.svg"></img>
       </Link>
       <Link href="#">
-        <div className={styles.item}>docs</div>
+        <img src="./language.svg"></img>
       </Link>
       <Link href="#">
-        <div className={styles.item}>EN</div>
+        <img src="./github.svg"></img>
       </Link>
-      <Link href="#">
-        <div className={styles.item}>立即使用</div>
-      </Link>
+  
     </div>
     </div>
     </>

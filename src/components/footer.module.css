@@ -1,0 +1,48 @@
+.container{
+  background: url(../../public/footer.svg) no-repeat;
+  background-size:cover;
+  height:400px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  padding:30px 300px;
+  margin-top:100px;
+}
+
+.title{
+  width: 74px;
+height: 28px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 140%;
+/* identical to box height, or 28px */
+
+color: #2D3A3A;
+}
+
+.item ul{
+  margin-top:24px;
+  gap:24px;
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0;
+}
+
+.item li {
+padding: 0px;
+margin:24px 0;
+font-family: 'PingFang SC';
+width: 114px;
+height: 20px;
+color:#535A5F;
+}
+
+.shadow {
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
