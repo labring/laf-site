@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-center font-bold;
+  }
+  h2 {
+    @apply my-16 font-semibold text-4xl text-center;
+  }
+  h3 {
+    @apply text-3xl font-medium;
+  }
+}

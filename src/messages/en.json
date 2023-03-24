@@ -1,0 +1,67 @@
+{
+  "LafLink": "https://laf.dev",
+  "NavBar": {
+    "title": "Laf is an open-source project, we need your Star",
+    "home": "Home",
+    "price": "Price",
+    "case": "Case",
+    "aboutUs": "About US",
+    "faq": "FAQ",
+    "docs": "Docs",
+    "contact": "Contact",
+    "start": "Start now"
+  },
+  "HomePage": {
+    "slogan": "Write Your Code, Like Write Blog",
+    "start": "Start now",
+    "content1": "Laf is a cloud development platform integrating functions, databases and storage",
+    "content2": "Publish online anytime, anywhere"
+  },
+  "Ability": {
+    "title": "Features",
+    "learn": "Learn more",
+    "function": "Cloud function",
+    "functionSub": ", release your first function in 5 seconds.",
+    "database": "Database",
+    "databaseSub": ", no need to create a database, ready to use out of the box.",
+    "storage": "Cloud storage",
+    "storageSub": ", create your own cloud storage, and manage files is simpler."
+  },
+  "Choice": {
+    "title": "Advantage",
+    "open": "Open Source",
+    "openSub": "Laf follows the Apache License 2.0 open source protocol",
+    "fast": "More faster",
+    "fastSub": "There is no cold start time to make your request respond faster.",
+    "private": "Private Deployment",
+    "privateSub": "We support privatization deployment.",
+    "simple": "More Simple",
+    "simplesub": "No need to care about Ops, Everything is Serverless.",
+    "cheap": "Lower Cost",
+    "cheapSub": "Million calls, only $0.01 to see more price plans",
+    "service": "Provide efficient services for all developers.",
+    "serviceSub": "Learn more"
+  },
+  "Join": {
+    "title": "Join the laf developer community",
+    "subtitle": "Grow up with us",
+    "content": "Here you can experience the latest version of Laf at the first time and keep communicating with developers and users in Slack or WeChat groups.",
+    "WeChat": "WeChat",
+    "forum": "Forum"
+  },
+  "Footer": {
+    "laf": "Laf provides cloud functions, cloud databases, object storage and other capabilities, writing code like a blog! Launch the ChatGPT app in 3 minutes!",
+    "product": "Product",
+    "item1_1": "laf cloud",
+    "item1_2": "sealos cloud",
+    "item1_3": "update log",
+    "developer": "Developer",
+    "item2_1": "how to install laf",
+    "item2_2": "open API",
+    "item2_3": "contributor's Guide",
+    "item2_4": "source code",
+    "support": "Support",
+    "item3_1": "feedback",
+    "item3_2": "forum"
+  }
+}
