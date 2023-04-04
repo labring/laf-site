@@ -51,7 +51,7 @@ const Choice = (props: Props) => {
           <div className="w-3/4">
             <h4 className="text-xl font-bold mb-2">{t(`Choice.simple`)}</h4>
             <p className="font-[##3C455D] text-base font-light">
-              {t(`Choice.simplesub`)}
+              {t(`Choice.simpleSub`)}
             </p>
           </div>
         </div>

@@ -21,7 +21,7 @@ const Footer = (props: Props) => {
                   height={30}
                   className="mt-4"
                 ></Image>
-                <p className="mt-8 leading-5 text-xs w-full max-w-[380px] text-[#5E6987]">
+                <p className="mt-8 leading-5 text-xs w-full max-w-[400px] text-[#5E6987]">
                   {t('Footer.laf')}
                 </p>
               </div>
@@ -30,15 +30,26 @@ const Footer = (props: Props) => {
                 {t('Footer.product')}
                 <ul className="leading-10 text-[#14171F]">
                   <li>
-                    <a href={t(`LafLink`)} target="_blank">
-                      {t('Footer.item1_1')}
-                    </a>
+                    <a href={t(`LafLink`)}>{t('Footer.item1_1')}</a>
                   </li>
                   <li>
                     <a
                       href="https://github.com/labring/laf/releases"
                       target="_blank"
                     >
+                      {t('Footer.item1_3')}
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://marketplace.visualstudio.com/items?itemName=NightWhite.laf-assistant"
+                      target="_blank"
+                    >
+                      {t('Footer.item1_4')}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/labring/sealos" target="_blank">
                       {t('Footer.item1_2')}
                     </a>
                   </li>
@@ -96,7 +107,7 @@ const Footer = (props: Props) => {
             </div>
             <div className="flex w-36 justify-evenly">
               <a
-                href="https://oss.lafyun.com/wofnib-image/2022-04-22-14-21-MRJH9o.png"
+                href="https://w4mci7-images.oss.laf.run/wechat.png"
                 target="_blank"
               >
                 <Image
@@ -129,7 +140,7 @@ const Footer = (props: Props) => {
       <div className="lg:hidden bg-[#F9F9F9]  flex-col px-8 mt-12 h-auto divide-solid divide-y divide-gray-200">
         <div className="pt-12 pb-4">
           <Image src="/logo_text.png" alt="logo" width={64} height={30}></Image>
-          <p className="mt-4 text-xs leading-6 w-full text-[#5E6987]">
+          <p className="mt-4 text-xs leading-5 w-full text-[#5E6987]">
             {t('Footer.laf')}
           </p>
 
@@ -140,9 +151,7 @@ const Footer = (props: Props) => {
               </div>
               <ul className="leading-8">
                 <li>
-                  <a href={t(`LafLink`)} target="_blank">
-                    {t('Footer.item1_1')}
-                  </a>
+                  <a href={t(`LafLink`)}>{t('Footer.item1_1')}</a>
                 </li>
                 <li>
                   <a
@@ -210,7 +219,7 @@ const Footer = (props: Props) => {
           </div>
           <div className="flex w-32 justify-around ml-[-10px]">
             <a
-              href="https://oss.lafyun.com/wofnib-image/2022-04-22-14-21-MRJH9o.png"
+              href="https://w4mci7-images.oss.laf.run/wechat.png"
               target="_blank"
             >
               <Image

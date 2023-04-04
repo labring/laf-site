@@ -22,10 +22,10 @@ const Ability = (props: Props) => {
           </div>
           <img
             className="hidden lg:block pl-6 lg:w-3/5 lg:mt-8"
-            src="./func1.svg"
+            src="./function.png"
           ></img>
 
-          <img className="mx-auto pl-8 lg:hidden " src="./func1.svg"></img>
+          <img className="mx-auto pl-8 lg:hidden " src="./function.png"></img>
         </div>
       </div>
       <div className="lg:hidden bg-card w-full  my-6 rounded-2xl">

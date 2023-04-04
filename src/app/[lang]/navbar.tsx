@@ -37,7 +37,7 @@ const Navbar = (props: Props) => {
         }
       >
         <div className="flex justify-between w-full max-w-[1600px]">
-          <div className="w-2/5 min-w-[420px] max-w-[600px] flex items-center">
+          <div className="flex items-center">
             <div>
               <img
                 src="/logo_text.png"
@@ -48,12 +48,17 @@ const Navbar = (props: Props) => {
             <a href="/" className="ml-10">
               {t('NavBar.home')}
             </a>
-
             <a target="_blank" href="https://docs.laf.dev" className="ml-10">
               {t('NavBar.docs')}
             </a>
-
-            <a target="_blank" href="#" className="ml-10">
+            <a href="https://forum.laf.run/" target="_blank" className="ml-10">
+              {t('NavBar.forum')}
+            </a>
+            <a
+              target="_blank"
+              href="https://www.wenjuan.com/s/I36ZNbl/"
+              className="ml-10"
+            >
               {t('NavBar.contact')}
             </a>
           </div>
@@ -70,15 +75,18 @@ const Navbar = (props: Props) => {
                 height={24}
                 className="mr-1"
               />
-              3.9K
+              {t('NavBar.stars')}
             </a>
             <div className="flex justify-evenly">
               <Language />
             </div>
             <div>
-              <button className="bg-primary py-2 px-5 rounded-md text-white">
+              <a
+                href={t('LafLink')}
+                className="bg-primary py-2 px-5 rounded text-white text-sm"
+              >
                 {t('NavBar.start')}
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -111,36 +119,47 @@ const Navbar = (props: Props) => {
             className="py-2  divide-y divide-gray-100 text-sm text-gray-700 "
             aria-labelledby="dropdownDefaultButton"
           >
-            {/* <div>
+            <div>
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-100 ">
+                <a href="/" className="block px-4 py-2 hover:bg-gray-100 ">
                   主页
                 </a>
               </li>
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                  价格
+                <a
+                  target="_blank"
+                  href="https://docs.laf.dev"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  {t('NavBar.docs')}
                 </a>
               </li>
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                  案例
+                <a
+                  href="https://forum.laf.run/"
+                  target="_blank"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  {t('NavBar.forum')}
                 </a>
               </li>
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                  关于我们
+                <a
+                  target="_blank"
+                  href="https://www.wenjuan.com/s/I36ZNbl/"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  {t('NavBar.contact')}
                 </a>
               </li>
-              <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-100 ">
-                  FAQ
-                </a>
-              </li>
-            </div> */}
+            </div>
             <div>
-              <a href="#" className="flex px-4 py-2 hover:bg-gray-100 ">
-                <img className="pr-2" src="./github.svg"></img>3.5k
+              <a
+                href="https://github.com/labring/laf"
+                className="flex px-4 py-2 hover:bg-gray-100 "
+              >
+                <img className="pr-2" src="./github.svg"></img>
+                {t('NavBar.stars')}
               </a>
               <a href="#" className="flex px-4 py-2 hover:bg-gray-100 ">
                 <Language />

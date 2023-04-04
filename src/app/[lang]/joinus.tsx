@@ -20,22 +20,22 @@ const Joinus = (props: Props) => {
 
           <div className="flex justify-start gap-4">
             <a href="https://discord.gg/6VhVrsaS" target="_blank">
-              <div className="w-32 h-12 flex border border-opacity-30	 border-blue-200 flex-row justify-center gap-2 items-center bg-gradient-to-r from-[#394DFF1A] to-[#66E3FF33] rounded-md">
+              <div className="w-36 h-12 flex border border-opacity-30	 border-blue-200 flex-row justify-center gap-2 items-center bg-gradient-to-r from-[#394DFF1A] to-[#66E3FF33] rounded-md">
                 <img src="./game2.svg"></img>
                 <p className="text-white">Discord</p>
               </div>
             </a>
             <a
-              href="https://oss.lafyun.com/wofnib-image/2022-04-22-14-21-MRJH9o.png"
+              href="https://w4mci7-images.oss.laf.run/wechat.png"
               target="_blank"
             >
-              <div className="w-32 h-12 flex border border-opacity-30	 border-green-200 flex-row justify-center gap-2 items-center bg-gradient-to-r from-[#2CE25E1A] to-[#1DFFD61A] rounded-md">
+              <div className="w-36 h-12 flex border border-opacity-30	 border-green-200 flex-row justify-center gap-2 items-center bg-gradient-to-r from-[#2CE25E1A] to-[#1DFFD61A] rounded-md">
                 <img src="./weixin2.svg"></img>
                 <p className="text-white">{t('Join.WeChat')}</p>
               </div>
             </a>
             <a href="https://forum.laf.run/" target="_blank">
-              <div className="w-32 h-12 flex border border-opacity-30	 border-blue-300 flex-row justify-center gap-2 items-center bg-gradient-to-r from-[#0B9DFF1A] to-[#4FC67E1A] rounded-md">
+              <div className="w-36 h-12 flex border border-opacity-30	 border-blue-300 flex-row justify-center gap-2 items-center bg-gradient-to-r from-[#0B9DFF1A] to-[#4FC67E1A] rounded-md">
                 <img src="./forum.svg"></img>
                 <p className="text-white">{t('Join.forum')}</p>
               </div>
@@ -82,17 +82,17 @@ const Joinus = (props: Props) => {
         </p>
         <div className="flex justify-start gap-4">
           <a
-            href="https://oss.lafyun.com/wofnib-image/2022-04-22-14-21-MRJH9o.png"
+            href="https://w4mci7-images.oss.laf.run/wechat.png"
             target="_blank"
           >
             <img className="w-6" src="./weixin1.svg"></img>
           </a>
 
-          <a href="#">
-            <img className="w-6" src="./forum1.svg"></img>
+          <a href="https://discord.gg/6VhVrsaS" target="_blank">
+            <img className="w-6" src="./game1.svg"></img>
           </a>
           <a href="https://forum.laf.run/" target="_blank">
-            <img className="w-6" src="./game1.svg"></img>
+            <img className="w-6" src="./forum1.svg"></img>
           </a>
         </div>
         <div className="absolute w-[400px] bottom-48 right-42">

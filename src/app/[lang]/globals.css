@@ -13,3 +13,7 @@
     @apply text-3xl font-medium;
   }
 }
+
+a:hover {
+  opacity: 0.8;
+}

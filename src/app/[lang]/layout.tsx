@@ -3,17 +3,23 @@ import './globals.css'
 import { NextIntlClientProvider } from 'next-intl/client'
 import { notFound } from 'next/navigation'
 
-export function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'de' }]
-}
+// or Dynamic metadata
+export async function generateMetadata({ params }: any) {
+  let messages
 
-export const metadata = {
-  title: 'laf 云开发',
-  description:
-    'Laf 是一个集函数、数据库、存储为一体的云开发平台，随时随地，发布上线',
-  icons: {
-    icon: [{ url: '/laficon.jpg' }],
-  },
+  try {
+    messages = (await import(`../../messages/${params.lang}.json`)).default
+  } catch (error) {
+    notFound()
+  }
+
+  return {
+    title: messages.WebSite.title,
+    description: messages.WebSite.description,
+    icons: {
+      icon: '/favicon.ico',
+    },
+  }
 }
 
 export default async function RootLayout({
