@@ -59,7 +59,7 @@ const Hero = (props: Props) => {
                   alt="cancelbtn"
                 ></Image>
               </button>
-              <DynamicComponentWithNoSSR />
+              {play ? <DynamicComponentWithNoSSR /> : null}
             </div>
           </div>
         </div>

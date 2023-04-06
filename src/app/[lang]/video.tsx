@@ -1,15 +1,14 @@
 'use client'
+import { useTranslations } from 'next-intl'
 import React, { Component } from 'react'
-import ReactPlayer from 'react-player'
 
-export default class App extends Component {
-  render() {
-    return (
-      <>
-        <video controls>
-          <source src=" https://itceb8-video.oss.laf.run/laf-website.mp4 " />
-        </video>
-      </>
-    )
-  }
+export default function Video() {
+  const t = useTranslations()
+  return (
+    <>
+      <video controls>
+        <source src={t('VideoLink')} />
+      </video>
+    </>
+  )
 }

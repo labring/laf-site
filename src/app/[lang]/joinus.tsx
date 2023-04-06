@@ -20,22 +20,22 @@ const Joinus = (props: Props) => {
 
           <div className="flex justify-start gap-4">
             <a href="https://discord.gg/6VhVrsaS" target="_blank">
-              <div className="w-32 h-12 flex border border-opacity-30	 border-blue-200 flex-row justify-center gap-2 items-center bg-gradient-to-r from-[#394DFF1A] to-[#66E3FF33] rounded-md">
+              <div className="w-36 h-12 flex border border-opacity-30	 border-blue-200 flex-row justify-center gap-2 items-center bg-gradient-to-r from-[#394DFF1A] to-[#66E3FF33] rounded-md">
                 <img src="./game2.svg"></img>
                 <p className="text-white">Discord</p>
               </div>
             </a>
             <a
-              href="https://oss.lafyun.com/wofnib-image/2022-04-22-14-21-MRJH9o.png"
+              href="https://w4mci7-images.oss.laf.run/wechat.png"
               target="_blank"
             >
-              <div className="w-32 h-12 flex border border-opacity-30	 border-green-200 flex-row justify-center gap-2 items-center bg-gradient-to-r from-[#2CE25E1A] to-[#1DFFD61A] rounded-md">
+              <div className="w-36 h-12 flex border border-opacity-30	 border-green-200 flex-row justify-center gap-2 items-center bg-gradient-to-r from-[#2CE25E1A] to-[#1DFFD61A] rounded-md">
                 <img src="./weixin2.svg"></img>
                 <p className="text-white">{t('Join.WeChat')}</p>
               </div>
             </a>
             <a href="https://forum.laf.run/" target="_blank">
-              <div className="w-32 h-12 flex border border-opacity-30	 border-blue-300 flex-row justify-center gap-2 items-center bg-gradient-to-r from-[#0B9DFF1A] to-[#4FC67E1A] rounded-md">
+              <div className="w-36 h-12 flex border border-opacity-30	 border-blue-300 flex-row justify-center gap-2 items-center bg-gradient-to-r from-[#0B9DFF1A] to-[#4FC67E1A] rounded-md">
                 <img src="./forum.svg"></img>
                 <p className="text-white">{t('Join.forum')}</p>
               </div>
@@ -56,7 +56,7 @@ const Joinus = (props: Props) => {
           <div className="absolute top-28 right-[420px] bg-yellow-600 opacity-20 rounded-full h-6 w-6 object-cover"></div>
 
           <img
-            className="border hover:border-primary absolute top-64 right-32 rounded-full h-10 w-10 object-cover"
+            className="border hover:border-primary absolute top-64 right-32 rounded-full h-12 w-12 object-cover"
             src="./p3.png"
           ></img>
           <img
@@ -64,15 +64,15 @@ const Joinus = (props: Props) => {
             src="./p4.png"
           ></img>
           <img
-            className="border hover:border-primary absolute top-32 right-80 rounded-full h-14 w-14 object-cover"
+            className="border hover:border-primary absolute top-32 right-80 rounded-full h-12 w-12 object-cover"
             src="./p1.png"
           ></img>
           <img
-            className="border hover:border-primary absolute top-72 right-72 rounded-full h-14 w-14 object-cover"
+            className="border hover:border-primary absolute top-72 right-72 rounded-full h-12 w-12 object-cover"
             src="./p2.png"
           ></img>
           <img
-            className="border hover:border-primary absolute top-40 right-[430px] rounded-full h-12 w-12 object-cover"
+            className="border hover:border-primary absolute top-48 right-[400px] rounded-full h-12 w-12 object-cover"
             src="./p5.png"
           ></img>
         </div>
@@ -87,7 +87,7 @@ const Joinus = (props: Props) => {
         </p>
         <div className="flex justify-start gap-4">
           <a
-            href="https://oss.lafyun.com/wofnib-image/2022-04-22-14-21-MRJH9o.png"
+            href="https://w4mci7-images.oss.laf.run/wechat.png"
             target="_blank"
           >
             <img className="w-6" src="./weixin1.svg"></img>
@@ -118,19 +118,19 @@ const Joinus = (props: Props) => {
             src="./p3.png"
           ></img>
           <img
-            className="border hover:border-primary absolute  bottom-[-50px] right-[250px] rounded-full h-12 w-12 object-cover"
+            className="border hover:border-primary absolute  bottom-[-50px] right-[250px] rounded-full h-10 w-10 object-cover"
             src="./p2.png"
           ></img>
           <img
-            className="border hover:border-primary absolute  bottom-[-120px] right-[250px]  rounded-full h-12 w-12 object-cover"
+            className="border hover:border-primary absolute  bottom-[-120px] right-[190px]  rounded-full h-10 w-10 object-cover"
             src="./p1.png"
           ></img>
           <img
-            className="border hover:border-primary absolute  bottom-[20px] right-[80px]  rounded-full h-12 w-12 object-cover"
+            className="border hover:border-primary absolute  bottom-[20px] right-[80px]  rounded-full h-10 w-10 object-cover"
             src="./p4.png"
           ></img>
           <img
-            className="border hover:border-primary absolute  bottom-[40px] right-[250px] rounded-full h-12 w-12 object-cover"
+            className="border hover:border-primary absolute  bottom-[40px] right-[250px] rounded-full h-10 w-10 object-cover"
             src="./p5.png"
           ></img>
         </div>
