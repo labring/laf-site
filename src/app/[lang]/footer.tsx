@@ -12,8 +12,8 @@ const Footer = (props: Props) => {
   return (
     <>
       <div className="hidden lg:flex bg-[#F9F9F9] justify-center">
-        <div className=" flex-col px-48 pt-10 w-full max-w-[1600px] divide-solid divide-y divide-gray-200">
-          <div className="pt-12 pb-10">
+        <div className=" flex-col w-full max-w-[1200px] divide-solid divide-y divide-gray-200">
+          <div className="py-[60px]">
             <div className="flex justify-between">
               <div className="w-1/2">
                 <Image
@@ -23,12 +23,12 @@ const Footer = (props: Props) => {
                   height={30}
                   className="mt-4"
                 ></Image>
-                <p className="mt-8 leading-5 text-xs w-full max-w-[400px] text-[#5E6987]">
+                <p className="mt-8 leading-5 text-xs w-full max-w-[380px] text-[#5E6987]">
                   {t('Footer.laf')}
                 </p>
               </div>
 
-              <div className="leading-10 w-1/8 text-sm text-[#3C455D]">
+              <div className="leading-10 w-1/6 text-sm text-[#3C455D]">
                 {t('Footer.product')}
                 <ul className="leading-10 text-[#14171F]">
                   <li>
@@ -57,7 +57,7 @@ const Footer = (props: Props) => {
                   </li>
                 </ul>
               </div>
-              <div className="leading-10 w-1/8 text-sm text-[#3C455D]">
+              <div className="leading-10 w-1/6 text-sm text-[#3C455D]">
                 {t('Footer.developer')}
                 <ul className="leading-10 text-[#14171F]">
                   <li>
@@ -87,7 +87,7 @@ const Footer = (props: Props) => {
                   </li>
                 </ul>
               </div>
-              <div className="leading-10 w-1/8 text-sm text-[#3C455D]">
+              <div className="leading-10 w-1/6 text-sm text-[#3C455D]">
                 {t('Footer.support')}
                 <ul className="leading-10 text-[#14171F]">
                   <li>
@@ -114,7 +114,7 @@ const Footer = (props: Props) => {
             </div>
             <div className="flex w-36 justify-evenly">
               <a
-                href="https://w4mci7-images.oss.laf.run/wechat.png"
+                href="https://oss.lafyun.com/wofnib-image/2022-04-22-14-21-MRJH9o.png"
                 target="_blank"
               >
                 <Image

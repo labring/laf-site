@@ -16,7 +16,7 @@ const Hero = (props: Props) => {
 
   return (
     <>
-      <div className="pt-40 lg:pt-44  lg:h-screen lg:max-h-[720px] flex flex-col items-center">
+      <div className="pt-40 lg:pt-44  h-auto lg:h-[720px] overflow-hidden flex flex-col items-center">
         <h1 className="text-4xl lg:text-6xl">{t(`HomePage.slogan`)}</h1>
         <p className="mt-8 px-10 lg:mt-5 lg:w-[600px] text-center text-xl z-10">
           {t(`HomePage.content1`)}
@@ -27,32 +27,20 @@ const Hero = (props: Props) => {
         <div className="z-10 mt-8 lg:mt-6">
           <a
             href={t(`LafLink`)}
-            className="z-40 inline-block bg-primary py-2 px-8 rounded-md text-white text-lg"
+            className="z-40  bg-primary h-[48px] w-[144px] text-[16px] flex justify-center items-center rounded-md text-white hover:active:bg-[#00AFA3]"
           >
             {t(`HomePage.start`)}
           </a>
         </div>
         <img
-          className="mt-24 lg:hidden hover:cursor-pointer"
-          src="./video3.svg"
+          className="bottom-0 lg:mt-[-80px] lg:bottom-auto lg:h-full lg:mx-auto hover:cursor-pointer"
+          src="./video.svg"
           onClick={() => setPlay(true)}
         ></img>
-        <div className="h-1/2">
-          <img
-            className="hidden lg:block mx-auto mt-[-100px]"
-            src="./video2.svg"
-          ></img>
-          <img
-            className=" mt-[-200px] mx-auto hidden lg:block hover:cursor-pointer"
-            src="./play.svg"
-            onClick={() => setPlay(true)}
-          ></img>
-        </div>
-
         <div
           className={
             play
-              ? 'fixed z-50 top-0 inset-0 bg-gray-600 bg-opacity-50 h-full w-full'
+              ? 'fixed z-50 top-0 inset-0 flex items-center justify-center bg-gray-600 bg-opacity-50 h-full w-full'
               : ' hidden'
           }
           id="my-modal"

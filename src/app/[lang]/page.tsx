@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Navbar />
       <div className="flex justify-center items-center">
-        <div className="flex flex-col max-w-[1600px]">
+        <div className="flex flex-col lg:max-w-[1200px] lg:mx-[48px]">
           <Hero />
           <Ability />
           <Choice />
