@@ -1,5 +1,6 @@
 {
   "LafLink": "https://laf.dev",
+  "DocsLink": "https://doc.laf.run/guide/",
   "WebSite": {
     "title": "Laf HomePage",
     "description": "Laf provides cloud functions, cloud databases, object storage and other capabilities, writing code like a blog! Launch the ChatGPT app in 3 minutes!"
@@ -67,6 +68,7 @@
     "item2_2": "Open API",
     "item2_3": "Contributor's Guide",
     "item2_4": "Source Code",
+    "item2_5": "Docs",
     "support": "Support",
     "item3_1": "Feedback",
     "item3_2": "Forum"

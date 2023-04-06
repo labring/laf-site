@@ -1,12 +1,14 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import axios from 'axios'
 
 type Props = {}
 
 const Footer = (props: Props) => {
   const t = useTranslations()
+
   return (
     <>
       <div className="hidden lg:flex bg-[#F9F9F9] justify-center">
@@ -68,14 +70,19 @@ const Footer = (props: Props) => {
                       {t('Footer.item2_2')}
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#" target="_blank">
                       {t('Footer.item2_3')}
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a href="https://github.com/labring/laf" target="_blank">
                       {t('Footer.item2_4')}
+                    </a>
+                  </li>
+                  <li>
+                    <a href={t('DocsLink')} target="_blank">
+                      {t('Footer.item2_5')}
                     </a>
                   </li>
                 </ul>
@@ -198,11 +205,11 @@ const Footer = (props: Props) => {
                     {t('Footer.item2_2')}
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#" target="_blank">
                     {t('Footer.item2_3')}
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a href="https://github.com/labring/laf" target="_blank">
                     {t('Footer.item2_4')}

@@ -1,16 +1,41 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import Language from './language'
+import axios from 'axios'
 
 type Props = {}
 
 const Navbar = (props: Props) => {
   const [showBanner, setShowBanner] = useState(true)
   const [toggleSidebar, setToggleSidebar] = useState(false)
+  const [stars, setStars] = useState<string | null>(null)
+
   const t = useTranslations()
+
+  useEffect(() => {
+    ;(async () => {
+      const axiosRes = await axios.get(
+        'https://img.shields.io/github/stars/labring/laf?style=plastic'
+      )
+      const str = axiosRes.data
+      const reg = /textLength="130">(\d+)k<\/text>/
+      const match = str.match(reg)
+
+      if (match) {
+        const matchedText = match[1]
+        setStars(`${matchedText}K`)
+        console.log(matchedText) // 输出：4k
+      } else {
+        console.log('No match found')
+      }
+    })()
+
+    return () => {}
+  }, [])
+
   return (
     <div className=" flex flex-col justify-center items-center">
       <div className={showBanner ? 'block z-40  fixed top-0' : 'hidden'}>
@@ -48,7 +73,7 @@ const Navbar = (props: Props) => {
             <a href="/" className="ml-10">
               {t('NavBar.home')}
             </a>
-            <a target="_blank" href="https://docs.laf.dev" className="ml-10">
+            <a target="_blank" href={t('DocsLink')} className="ml-10">
               {t('NavBar.docs')}
             </a>
             <a href="https://forum.laf.run/" target="_blank" className="ml-10">
@@ -63,20 +88,23 @@ const Navbar = (props: Props) => {
             </a>
           </div>
           <div className="w-80 flex justify-evenly items-center">
-            <a
-              href="https://github.com/labring/laf"
-              target="_blank"
-              className="flex"
-            >
-              <Image
-                alt="github"
-                src="./github.svg"
-                width={24}
-                height={24}
-                className="mr-1"
-              />
-              {t('NavBar.stars')}
-            </a>
+            {stars ? (
+              <a
+                href="https://github.com/labring/laf"
+                target="_blank"
+                className="flex"
+              >
+                <Image
+                  alt="github"
+                  src="./github.svg"
+                  width={24}
+                  height={24}
+                  className="mr-1"
+                />
+                {stars}
+              </a>
+            ) : null}
+
             <div className="flex justify-evenly">
               <Language />
             </div>
@@ -154,13 +182,16 @@ const Navbar = (props: Props) => {
               </li>
             </div>
             <div>
-              <a
-                href="https://github.com/labring/laf"
-                className="flex px-4 py-2 hover:bg-gray-100 "
-              >
-                <img className="pr-2" src="./github.svg"></img>
-                {t('NavBar.stars')}
-              </a>
+              {stars ? (
+                <a
+                  href="https://github.com/labring/laf"
+                  className="flex px-4 py-2 hover:bg-gray-100 "
+                >
+                  <img className="pr-2" src="./github.svg"></img>
+                  {stars}
+                </a>
+              ) : null}
+
               <a href="#" className="flex px-4 py-2 hover:bg-gray-100 ">
                 <Language />
               </a>

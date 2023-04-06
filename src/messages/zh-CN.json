@@ -1,5 +1,6 @@
 {
   "LafLink": "https://laf.run",
+  "DocsLink": "https://doc.laf.run/guide/",
   "WebSite": {
     "title": "Laf 云开发官网",
     "description": "Laf 是一个集函数、数据库、存储为一体的云开发平台，随时随地，发布上线"
@@ -67,6 +68,7 @@
     "item2_2": "开放 API",
     "item2_3": "贡献者指南",
     "item2_4": "源码",
+    "item2_5": "文档",
     "support": "支持",
     "item3_1": "问题反馈",
     "item3_2": "开发者社区"
