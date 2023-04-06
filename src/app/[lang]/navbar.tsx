@@ -9,11 +9,25 @@ import axios from 'axios'
 type Props = {}
 
 const Navbar = (props: Props) => {
-  const [showBanner, setShowBanner] = useState(true)
+  const [showBanner, setShowBanner] = useState(false)
   const [toggleSidebar, setToggleSidebar] = useState(false)
   const [stars, setStars] = useState<string | null>(null)
-
   const t = useTranslations()
+
+  useEffect(() => {
+    const expirationTime = 24 * 60 * 60 * 1000
+    const lastCanceledTime: string | null =
+      localStorage.getItem('lastCanceledTime')
+    const now = new Date().getTime()
+    // console.log("now:",now,"last",lastCanceledTime);
+    //如果本地已经存有上次的删除时间，且小于24h，则不显示banner
+    if (lastCanceledTime && now - Number(lastCanceledTime) < expirationTime) {
+      setShowBanner(false)
+    } else {
+      //没有本地的删除时间，或者已经大于24h，显示banner
+      setShowBanner(true)
+    }
+  }, [])
 
   useEffect(() => {
     ;(async () => {
@@ -51,7 +65,14 @@ const Navbar = (props: Props) => {
         <img
           className="absolute right-4 lg:right-36 top-3 z-40 hover:cursor-pointer "
           src="./cancelbtn.svg"
-          onClick={() => setShowBanner(false)}
+          alt={'cancel'}
+          onClick={() => {
+            setShowBanner(false)
+            localStorage.setItem(
+              'lastCanceledTime',
+              new Date().getTime().toString()
+            )
+          }}
         ></img>
       </div>
       <div
@@ -61,7 +82,7 @@ const Navbar = (props: Props) => {
             : 'z-40 py-4 bg-white  justify-center w-full px-28 hidden fixed top-0 lg:flex'
         }
       >
-        <div className="flex justify-between w-full max-w-[1600px]">
+        <div className="flex justify-between w-full max-w-[1200px]">
           <div className="flex items-center">
             <div>
               <img
@@ -126,11 +147,12 @@ const Navbar = (props: Props) => {
             : 'z-40 bg-white fixed top-0 w-full flex px-8 py-4 lg:hidden justify-between '
         }
       >
-        <img className="h-10" src="./logo_text.png"></img>
+        <img className="h-10" src="./logo_text.png"  alt="logo"></img>
 
         <img
           className="w-8 hover:cursor-pointer"
           src="./menu.svg"
+          alt="menu"
           onClick={() => setToggleSidebar(!toggleSidebar)}
         ></img>
       </div>
@@ -187,7 +209,7 @@ const Navbar = (props: Props) => {
                   href="https://github.com/labring/laf"
                   className="flex px-4 py-2 hover:bg-gray-100 "
                 >
-                  <img className="pr-2" src="./github.svg"></img>
+                  <img className="pr-2" src="./github.svg"  alt="github"></img>
                   {stars}
                 </a>
               ) : null}

@@ -114,7 +114,7 @@ const Footer = (props: Props) => {
             </div>
             <div className="flex w-36 justify-evenly">
               <a
-                href="https://oss.lafyun.com/wofnib-image/2022-04-22-14-21-MRJH9o.png"
+                href="https://w4mci7-images.oss.laf.run/wechat.png"
                 target="_blank"
               >
                 <Image
