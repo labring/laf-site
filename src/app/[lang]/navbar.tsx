@@ -9,11 +9,24 @@ import axios from 'axios'
 type Props = {}
 
 const Navbar = (props: Props) => {
-  const [showBanner, setShowBanner] = useState(true)
+  const [showBanner, setShowBanner] = useState(false)
   const [toggleSidebar, setToggleSidebar] = useState(false)
   const [stars, setStars] = useState<string | null>(null)
-
   const t = useTranslations()
+
+  useEffect(() => {
+    const expirationTime = 24*60*60*1000;
+    const lastCanceledTime:string | null= localStorage.getItem('lastCanceledTime');
+    const now = new Date().getTime();
+    // console.log("now:",now,"last",lastCanceledTime);
+    //如果本地已经存有上次的删除时间，且小于24h，则不显示banner
+    if(lastCanceledTime && now - Number(lastCanceledTime) < expirationTime){
+      setShowBanner(false);
+    }else{
+    //没有本地的删除时间，或者已经大于24h，显示banner
+      setShowBanner(true);
+    }
+  },[])
 
   useEffect(() => {
     ;(async () => {
@@ -51,7 +64,12 @@ const Navbar = (props: Props) => {
         <img
           className="absolute right-4 lg:right-36 top-3 z-40 hover:cursor-pointer "
           src="./cancelbtn.svg"
-          onClick={() => setShowBanner(false)}
+          alt={"cancel"}
+          onClick={() => {
+            setShowBanner(false);
+            localStorage.setItem('lastCanceledTime',new Date().getTime().toString());
+          }
+          }
         ></img>
       </div>
       <div
