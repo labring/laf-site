@@ -8,8 +8,8 @@ type Props = {}
 const Ability = (props: Props) => {
   const t = useTranslations()
   return (
-    <div className="h-auto">
-      <h2 className="text-[#152132] py-[80px] pb-[48px] lg:py-[120px] lg:pb-[60px]">
+    <div className="h-auto  ">
+      <h2 className="text-[#152132] py-[80px] pb-[48px] lg:py-[60px] lg:pb-[60px]">
         {t(`Ability.title`)}
       </h2>
       <div className="w-full px-[16px] lg:hidden">

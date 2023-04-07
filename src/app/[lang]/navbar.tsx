@@ -15,18 +15,19 @@ const Navbar = (props: Props) => {
   const t = useTranslations()
 
   useEffect(() => {
-    const expirationTime = 24*60*60*1000;
-    const lastCanceledTime:string | null= localStorage.getItem('lastCanceledTime');
-    const now = new Date().getTime();
+    const expirationTime = 24 * 60 * 60 * 1000
+    const lastCanceledTime: string | null =
+      localStorage.getItem('lastCanceledTime')
+    const now = new Date().getTime()
     // console.log("now:",now,"last",lastCanceledTime);
     //如果本地已经存有上次的删除时间，且小于24h，则不显示banner
-    if(lastCanceledTime && now - Number(lastCanceledTime) < expirationTime){
-      setShowBanner(false);
-    }else{
-    //没有本地的删除时间，或者已经大于24h，显示banner
-      setShowBanner(true);
+    if (lastCanceledTime && now - Number(lastCanceledTime) < expirationTime) {
+      setShowBanner(false)
+    } else {
+      //没有本地的删除时间，或者已经大于24h，显示banner
+      setShowBanner(true)
     }
-  },[])
+  }, [])
 
   useEffect(() => {
     ;(async () => {
@@ -64,12 +65,14 @@ const Navbar = (props: Props) => {
         <img
           className="absolute right-4 lg:right-36 top-3 z-40 hover:cursor-pointer "
           src="./cancelbtn.svg"
-          alt={"cancel"}
+          alt={'cancel'}
           onClick={() => {
-            setShowBanner(false);
-            localStorage.setItem('lastCanceledTime',new Date().getTime().toString());
-          }
-          }
+            setShowBanner(false)
+            localStorage.setItem(
+              'lastCanceledTime',
+              new Date().getTime().toString()
+            )
+          }}
         ></img>
       </div>
       <div
@@ -79,7 +82,7 @@ const Navbar = (props: Props) => {
             : 'z-40 py-4 bg-white  justify-center w-full px-28 hidden fixed top-0 lg:flex'
         }
       >
-        <div className="flex justify-between w-full max-w-[1600px]">
+        <div className="flex justify-between w-full max-w-[1200px]">
           <div className="flex items-center">
             <div>
               <img
