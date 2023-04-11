@@ -147,7 +147,7 @@ const Navbar = (props: Props) => {
             : 'z-40 bg-white fixed top-0 w-full flex px-8 py-4 lg:hidden justify-between '
         }
       >
-        <img className="h-10" src="./logo_text.png"  alt="logo"></img>
+        <img className="h-10" src="./logo_text.png" alt="logo"></img>
 
         <img
           className="w-8 hover:cursor-pointer"
@@ -209,7 +209,7 @@ const Navbar = (props: Props) => {
                   href="https://github.com/labring/laf"
                   className="flex px-4 py-2 hover:bg-gray-100 "
                 >
-                  <img className="pr-2" src="./github.svg"  alt="github"></img>
+                  <img className="pr-2" src="./github.svg" alt="github"></img>
                   {stars}
                 </a>
               ) : null}

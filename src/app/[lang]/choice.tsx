@@ -13,10 +13,7 @@ const Choice = (props: Props) => {
       <div className="lg:grid lg:grid-cols-3 mx-[16px] lg:gap-6 lg:mx-0 space-y-4 lg:space-y-0">
         <div className="flex hover:bg-[#F9F9F9] p-[40px] justify-between h-auto border-solid border boder-[#3C455D] rounded-md ">
           <div className="w-1/4">
-            <img 
-            src="./logo1.svg"
-            alt="logo1"
-            ></img>
+            <img src="./logo1.svg" alt="logo1"></img>
           </div>
           <div className="w-3/4 ">
             <h4 className="text-xl font-bold mb-2">{t(`Choice.open`)}</h4>
@@ -28,10 +25,7 @@ const Choice = (props: Props) => {
         </div>
         <div className="flex hover:bg-[#F9F9F9] p-[40px] justify-between h-auto border-solid border rounded-md boder-[#3C455D]">
           <div className="w-1/4">
-            <img 
-            src="./logo2.svg"
-            alt="logo2"
-            ></img>
+            <img src="./logo2.svg" alt="logo2"></img>
           </div>
           <div className="w-3/4">
             <h4 className="text-xl font-bold mb-2">{t(`Choice.fast`)}</h4>
@@ -42,10 +36,7 @@ const Choice = (props: Props) => {
         </div>
         <div className="flex hover:bg-[#F9F9F9] p-[40px] justify-between h-auto border-solid border rounded-md boder-[#3C455D]">
           <div className="w-1/4">
-            <img 
-            src="./logo3.svg"
-            alt="logo3"
-            ></img>
+            <img src="./logo3.svg" alt="logo3"></img>
           </div>
           <div className="w-3/4">
             <h4 className="text-xl font-bold mb-2">{t(`Choice.private`)}</h4>
@@ -56,10 +47,7 @@ const Choice = (props: Props) => {
         </div>
         <div className="flex hover:bg-[#F9F9F9] p-[40px] justify-between h-auto border-solid border rounded-md boder-[#3C455D]">
           <div className="w-1/4">
-            <img 
-            src="./logo4.svg"
-            alt="logo4"
-            ></img>
+            <img src="./logo4.svg" alt="logo4"></img>
           </div>
           <div className="w-3/4">
             <h4 className="text-xl font-bold mb-2">{t(`Choice.simple`)}</h4>
@@ -70,10 +58,7 @@ const Choice = (props: Props) => {
         </div>
         <div className="flex hover:bg-[#F9F9F9] p-[40px] justify-between h-[200px] border-solid border rounded-md boder-[#3C455D]">
           <div className="w-1/4">
-            <img 
-            src="./logo5.svg"
-            alt="logo5"
-            ></img>
+            <img src="./logo5.svg" alt="logo5"></img>
           </div>
           <div className="w-3/4">
             <h4 className="text-xl font-bold mb-2">{t(`Choice.cheap`)}</h4>
@@ -84,11 +69,7 @@ const Choice = (props: Props) => {
         </div>
         <div className="flex hover:bg-[#F9F9F9] p-[40px] justify-between h-[200px] border-solid border rounded-md boder-[#3C455D]">
           <div className="w-1/4">
-            <img 
-            src="./logo6.png" 
-            className="w-12 h-12"
-            alt="logo6"
-            ></img>
+            <img src="./logo6.png" className="w-12 h-12" alt="logo6"></img>
           </div>
           <div className="w-3/4">
             <h4 className="text-xl font-bold mb-2">{t(`Choice.service`)}</h4>
